@@ -67,9 +67,9 @@ python3 gui.py
 - **Problem:**  
     When assembling instructions, the program would sometimes throw errors due to incorrect operand counts.  
     - Example:  
-    ```asm
-    mul r1, r2, r3, r4     ; Error: Too many operands (expected 3, got 4)
-    add r1, r2              ; Error: Too few operands (expected 3, got 2)
+    ```
+    mul r1, r2, r3, r4     ; Error: Invalid number of Operands for mul (expected 3, got 4)
+    add r1, r2              ; Error: Invalid number of Operands for add (expected 3, got 2)
     ```
 - **Root Cause:**  
     - The assembler logic expected a fixed number of operands for each instruction but failed when it encountered too many or too few operands.
@@ -79,3 +79,24 @@ python3 gui.py
     ```
     Error: Invalid number of operands for mul (expected 3, got 4)
     ```
+### 2️⃣ **Label Handling Issues**
+- **Problem:**  
+    When using labels in the assembly code, the assembler would sometimes misinterpret them or fail to resolve the jump address correctly.  
+    - Example:  
+    ```
+    start:                  ; Label definition
+    add r1,r2,r3            ; addition
+    b start                 ; Branch to the label
+    ```
+- **Root Cause:**  
+    - Labels were not properly mapped to their memory addresses during the first pass.
+    - Jump instructions failed to resolve the label reference during the second pass.
+- **Solution:**  
+    - Implemented **two-pass assembly**:
+        - **First Pass:** Map labels to their respective memory addresses.
+        - **Second Pass:** Replace label references with corresponding addresses.
+    - Added error logging for unresolved labels:
+    ```
+    Error: Undefined label 'loop' 
+    ```
+  
