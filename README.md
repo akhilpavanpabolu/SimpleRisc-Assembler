@@ -43,3 +43,14 @@ python3 gui.py
 * Select the input and output files.
 * Click Assemble.
 * View the binary and hexadecimal output with error messages displayed in real-time.
+  
+## Basic look of our GUI looks like :
+<img width="1004" alt="Interface" src="https://github.com/user-attachments/assets/12855ff2-b5dc-42cb-b887-5c48dfd69585" />
+
+---
+## Limitations of our project :
+* we should run GUI in terminal for execution.
+* for load and store instructions the syntax would be :
+  load : ld <rd>,<rs1>,<rs2/imm>
+  store : st <rd>,<rs1>,<rs2/imm>
+* Spaces should be avoided between register and comas in instruction.
