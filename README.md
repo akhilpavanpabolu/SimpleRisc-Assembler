@@ -51,6 +51,8 @@ python3 gui.py
 ## Limitations of our project :
 * we should run GUI in terminal for execution.
 * for load and store instructions the syntax would be :
-  load : ld <rd>,<rs1>,<rs2/imm>
-  store : st <rd>,<rs1>,<rs2/imm>
+  load :
+      ld <rd>,<rs1>,<rs2/imm>
+  store :
+      st <rd>,<rs1>,<rs2/imm>
 * Spaces should be avoided between register and comas in instruction.
