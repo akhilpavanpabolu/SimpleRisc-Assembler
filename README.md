@@ -17,7 +17,7 @@ A graphical interface (**gui.py**) to simplify the assembly process with a file 
 
 ## 🔍 Features :
 ### Instruction Set Support: 
-Implements various instructions such as add, sub, mul, div, mod, cmp, and, or, not, mov, lsl, lsr, asr, nop, ld, st, beq, bgt, b, call, and ret.
+Implements various instructions such as `add`, `sub`, `mul`, `div`, `mod`, `cmp`, `and`, `or`, `not`, `mov`, `lsl`, `lsr`, `asr`, `nop`, `ld`, `st`, `beq`, `bgt`, `b`, `call`, and `ret`.
 ### Label Support : 
 Supports labels and resolves them during assembly.
 ### Comment Removal: 
@@ -48,15 +48,15 @@ python3 gui.py
 * View the binary and hexadecimal output with error messages displayed in real-time.
   
 ## Basic look of our GUI looks like :
-<img width="800" alt="Interface" src="https://github.com/user-attachments/assets/12855ff2-b5dc-42cb-b887-5c48dfd69585" />
+<img width="730" alt="Interface" src="https://github.com/user-attachments/assets/12855ff2-b5dc-42cb-b887-5c48dfd69585" />
 
 ---
 ## Limitations of our project :
 * we should run GUI in terminal for execution.
 * for load and store instructions the syntax would be :
    load :
-       **ld <rd>,<rs1>,<rs2/imm>**
+       `ld <rd>,<rs1>,<rs2/imm>`
   store :
-       **st <rd> ,<rs1>,<rs2/imm>**
+        `st <rd> ,<rs1>,<rs2/imm>` 
   
 * Spaces should be avoided between register and comas in instruction.
