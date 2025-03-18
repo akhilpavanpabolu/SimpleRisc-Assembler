@@ -45,7 +45,7 @@ python3 gui.py
 * View the binary and hexadecimal output with error messages displayed in real-time.
   
 ## Basic look of our GUI looks like :
-<img width="1004" alt="Interface" src="https://github.com/user-attachments/assets/12855ff2-b5dc-42cb-b887-5c48dfd69585" />
+<img width="800" alt="Interface" src="https://github.com/user-attachments/assets/12855ff2-b5dc-42cb-b887-5c48dfd69585" />
 
 ---
 ## Limitations of our project :
@@ -54,5 +54,5 @@ python3 gui.py
   load :
       ld <rd>,<rs1>,<rs2/imm>
   store :
-      st <rd>,<rs1>,<rs2/imm>
+      st <rd> ,<rs1>,<rs2/imm>
 * Spaces should be avoided between register and comas in instruction.
