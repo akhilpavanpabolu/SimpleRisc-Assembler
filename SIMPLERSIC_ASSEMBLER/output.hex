@@ -1,0 +1,9 @@
+0048C000
+0C8C002C
+1159C000
+199C4000
+40418000
+7048C000
+97FFFFFE
+795C4000
+Error: Invalid number of operands for mul (expected 3, got 4)
