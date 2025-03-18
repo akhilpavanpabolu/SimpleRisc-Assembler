@@ -57,7 +57,7 @@ python3 gui.py
      * Load :
        `ld <rd>,<rs1>,<rs2/imm>`
     * Store :
-        `st <rd> ,<rs1>,<rs2/imm>` 
+        `st <rd>,<rs1>,<rs2/imm>` 
   
 * Spaces should be avoided between register and comas in instruction.
 
@@ -68,8 +68,8 @@ python3 gui.py
     When assembling instructions, the program would sometimes throw errors due to incorrect operand counts.  
     - Example:  
     ```
-    mul r1, r2, r3, r4     ; Error: Invalid number of Operands for mul (expected 3, got 4)
-    add r1, r2              ; Error: Invalid number of Operands for add (expected 3, got 2)
+    mul r1,r2,r3,r4     ; Error: Invalid number of Operands for mul (expected 3, got 4)
+    add r1,r2              ; Error: Invalid number of Operands for add (expected 3, got 2)
     ```
 - **Root Cause:**  
     - The assembler logic expected a fixed number of operands for each instruction but failed when it encountered too many or too few operands.
