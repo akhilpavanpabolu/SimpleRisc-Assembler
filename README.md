@@ -8,8 +8,11 @@ The core program (**ass.c**) parses and encodes assembly instructions into binar
 A graphical interface (**gui.py**) to simplify the assembly process with a file selection system and real-time output display.
 ### Input & Output Files:
 **input.asm** : The assembly source code.
+
 **output.bin** : The assembled binary output.
+
 **output.hex** : The assembled hexadecimal output.
+
 **binary_output.txt** : A readable binary representation of the machine code, with errors logged.
 
 ## 🔍 Features :
