@@ -3,9 +3,9 @@ This project is a custom assembler that translates assembly code into binary and
 ## 🚀 Project Overview
 It includes:
 ### Assembler in C :
-The core program (**ass.c**) parses and encodes assembly instructions into binary and hexadecimal format.
+The core program (`ass.c`) parses and encodes assembly instructions into binary and hexadecimal format.
 ### GUI in Python  :
-A graphical interface (**gui.py**) to simplify the assembly process with a file selection system and real-time output display.
+A graphical interface (``gui.py`) to simplify the assembly process with a file selection system and real-time output display.
 ### Input & Output Files:
 **input.asm** : The assembly source code.
 
@@ -53,10 +53,10 @@ python3 gui.py
 ---
 ## Limitations of our project :
 * we should run GUI in terminal for execution.
-* for load and store instructions the syntax would be :
-   load :
+* for load and store instructions the syntax would be:
+     * Load :
        `ld <rd>,<rs1>,<rs2/imm>`
-  store :
+    * Store :
         `st <rd> ,<rs1>,<rs2/imm>` 
   
 * Spaces should be avoided between register and comas in instruction.
