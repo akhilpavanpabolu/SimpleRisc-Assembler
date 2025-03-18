@@ -5,7 +5,7 @@ It includes:
 ### Assembler in C :
 The core program (`ass.c`) parses and encodes assembly instructions into binary and hexadecimal format.
 ### GUI in Python  :
-A graphical interface (``gui.py`) to simplify the assembly process with a file selection system and real-time output display.
+A graphical interface (`gui.py`) to simplify the assembly process with a file selection system and real-time output display.
 ### Input & Output Files:
 **input.asm** : The assembly source code.
 
@@ -60,3 +60,22 @@ python3 gui.py
         `st <rd> ,<rs1>,<rs2/imm>` 
   
 * Spaces should be avoided between register and comas in instruction.
+
+## 🛠️ Issues Faced and Resolutions
+
+### 1️⃣ **Incorrect Operand Count**
+- **Problem:**  
+    When assembling instructions, the program would sometimes throw errors due to incorrect operand counts.  
+    - Example:  
+    ```asm
+    mul r1, r2, r3, r4     ; Error: Too many operands (expected 3, got 4)
+    add r1, r2              ; Error: Too few operands (expected 3, got 2)
+    ```
+- **Root Cause:**  
+    - The assembler logic expected a fixed number of operands for each instruction but failed when it encountered too many or too few operands.
+- **Solution:**  
+    - Added **operand count validation** to the assembler.  
+    - Implemented error handling to log the issue in the output:
+    ```
+    Error: Invalid number of operands for mul (expected 3, got 4)
+    ```
