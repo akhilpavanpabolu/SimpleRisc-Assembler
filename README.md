@@ -60,6 +60,9 @@ python3 gui.py
         `st <rd>,<rs1>,<rs2/imm>` 
   
 * Spaces should be avoided between register and comas in instruction.
+* Currently, our assembler does not support placing an instruction on the same line as a label.
+    If an instruction is written on the same line as a label (e.g., 'start: add r1, r2, r3'), the assembler treats it as a label definition only and ignores the instruction.
+This happens because the first pass extracts the label and skips the rest of the line.
 
 ## 🛠️ Issues Faced and Resolutions
 
