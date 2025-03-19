@@ -103,3 +103,6 @@ This happens because the first pass extracts the label and skips the rest of the
     Error: Undefined label 'loop' 
     ```
   
+### 3️⃣ While developing GUI:
+- * While building the GUI, we faced multiple errors as it was a new concept for us. Since we were unfamiliar with GUI programming, it took us more time to develop and debug the interface.
+    
